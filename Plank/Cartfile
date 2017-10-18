@@ -1,0 +1,8 @@
+#github "Alamofire/Alamofire"
+github "SnapKit/SnapKit"
+#github "SwiftyJSON/SwiftyJSON"
+#github "jdg/MBProgressHUD"
+#git "https://github.com/zhangxigithub/ZXTools_Swift.git" "master"
+#github "dzenbot/DZNEmptyDataSet"
+#github "ccgus/fmdb"
+#github "MatiBot/MBCircularProgressBar"
