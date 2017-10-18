@@ -45,12 +45,13 @@
                             <constraint firstItem="PPk-5I-CDA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Aq-26-Pcg"/>
                             <constraint firstAttribute="bottom" secondItem="PPk-5I-CDA" secondAttribute="bottom" id="GKr-5k-hS3"/>
                             <constraint firstItem="PPk-5I-CDA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rh2-bP-iWM"/>
-                            <constraint firstItem="Ah5-RO-PGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="Xtp-AC-5oX"/>
+                            <constraint firstItem="Ah5-RO-PGs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="21" identifier="left" id="Xtp-AC-5oX"/>
                             <constraint firstItem="Ah5-RO-PGs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="j5t-Vc-Qrj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundCenter" destination="Rh2-bP-iWM" id="smL-vi-HeI"/>
                         <outlet property="setButton" destination="Ah5-RO-PGs" id="bPZ-DQ-KcC"/>
                     </connections>
                 </viewController>
