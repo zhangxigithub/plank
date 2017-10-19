@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33184CA61F9731DF0024F351 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33184CA41F97317E0024F351 /* SnapKit.framework */; };
 		33184CA81F9737910024F351 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33184CA71F9737910024F351 /* Tools.swift */; };
+		33184CAA1F984CE70024F351 /* PlankTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33184CA91F984CE60024F351 /* PlankTimer.swift */; };
 		33E327D51F943A8F00BA9514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E327D41F943A8F00BA9514 /* AppDelegate.swift */; };
 		33E327D71F943A8F00BA9514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E327D61F943A8F00BA9514 /* ViewController.swift */; };
 		33E327DA1F943A8F00BA9514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E327D81F943A8F00BA9514 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		33184CA41F97317E0024F351 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		33184CA71F9737910024F351 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		33184CA91F984CE60024F351 /* PlankTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlankTimer.swift; sourceTree = "<group>"; };
 		33E327D11F943A8F00BA9514 /* Plank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E327D41F943A8F00BA9514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E327D61F943A8F00BA9514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				33184CA41F97317E0024F351 /* SnapKit.framework */,
 				33E327D41F943A8F00BA9514 /* AppDelegate.swift */,
 				33E327D61F943A8F00BA9514 /* ViewController.swift */,
+				33184CA91F984CE60024F351 /* PlankTimer.swift */,
 				33184CA71F9737910024F351 /* Tools.swift */,
 				33E327D81F943A8F00BA9514 /* Main.storyboard */,
 				33E327DB1F943A8F00BA9514 /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 			files = (
 				33184CA81F9737910024F351 /* Tools.swift in Sources */,
 				33E327D71F943A8F00BA9514 /* ViewController.swift in Sources */,
+				33184CAA1F984CE70024F351 /* PlankTimer.swift in Sources */,
 				33E327D51F943A8F00BA9514 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
