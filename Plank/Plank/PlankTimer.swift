@@ -12,5 +12,32 @@ import Foundation
 
 class PlankTimer
 {
-    var plankTimer : Int = 30
+    var plankDuration : Int{
+        set{
+            UserDefaults.standard.set(newValue, forKey: "plankDuration")
+        }
+        get{
+            if let value = UserDefaults.standard.object(forKey: "plankDuration") as? NSNumber
+            {
+                return value.intValue
+            }else
+            {
+                return 30
+            }
+        }
+    }
+    var restDuration : Int{
+        set{
+            UserDefaults.standard.set(newValue, forKey: "restDuration")
+        }
+        get{
+            if let value = UserDefaults.standard.object(forKey: "restDuration") as? NSNumber
+            {
+                return value.intValue
+            }else
+            {
+                return 20
+            }
+        }
+    }
 }

@@ -8,23 +8,35 @@
 
 import UIKit
 import SnapKit
+import UICircularProgressRing
 
 class ViewController: UIViewController {
     
     
     
-    
+    let timer = PlankTimer()
     
     @IBOutlet weak var plankTimeLabel: UILabel!
     @IBOutlet weak var restTimeLabel: UILabel!
     
     @IBOutlet var settingView: UIView!
     @IBOutlet var historyView: UIView!
+    @IBOutlet var plankView: UIView!
     
     @IBOutlet weak var backgroundCenter: NSLayoutConstraint!
     @IBOutlet weak var setButton: UIButton!
     @IBOutlet weak var historyButton: UIButton!
     
+    var ring : UICircularProgressRingView!
+    
+    @IBAction func start(_ sender: UIButton) {
+
+        
+        
+        ring.setProgress(value: 25, animationDuration: 5) {
+            print("down")
+        }
+    }
     
     @IBAction func set(_ sender: UIButton)
     {
@@ -110,6 +122,22 @@ class ViewController: UIViewController {
         
         self.view.bringSubview(toFront: setButton)
         self.view.bringSubview(toFront: historyButton)
+        
+        
+        
+        
+         ring = UICircularProgressRingView(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
+         ring.maxValue = 50
+         ring.innerRingColor = UIColor.blue
+            plankView.addSubview(ring)
+ 
+        self.view.addSubview(plankView)
+        
+        
+        
+        
+        self.plankTimeLabel.text = String(format:"%d秒",timer.plankDuration)
+        self.restTimeLabel.text = String(format:"%d秒",timer.restDuration)
 
     }
 
@@ -122,9 +150,17 @@ extension ViewController
 {
     @IBAction func changePlankTime(_ sender: UIButton) {
         print("changePlankTime")
+        
+        let a = (sender.tag == 1) ? -1 : 1
+        timer.plankDuration += a
+        self.plankTimeLabel.text = String(format:"%d秒",timer.plankDuration)
+        
     }
     @IBAction func changeRestTime(_ sender: UIButton) {
         print("changeRestTime")
+        let a = (sender.tag == 1) ? -1 : 1
+        timer.restDuration += a
+        self.restTimeLabel.text = String(format:"%d秒",timer.restDuration)
     }
 }
 //MARK: - 历史

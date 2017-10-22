@@ -1,5 +1,10 @@
+#github "SnapKit/SnapKit"
+#github "realm/realm-cocoa"
+#github "luispadron/UICircularProgressRing"
+
+
+
 #github "Alamofire/Alamofire"
-github "SnapKit/SnapKit"
 #github "SwiftyJSON/SwiftyJSON"
 #github "jdg/MBProgressHUD"
 #git "https://github.com/zhangxigithub/ZXTools_Swift.git" "master"

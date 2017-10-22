@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33184CA61F9731DF0024F351 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33184CA41F97317E0024F351 /* SnapKit.framework */; };
 		33184CA81F9737910024F351 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33184CA71F9737910024F351 /* Tools.swift */; };
 		33184CAA1F984CE70024F351 /* PlankTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33184CA91F984CE60024F351 /* PlankTimer.swift */; };
+		33184CAD1F988A400024F351 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33184CAB1F988A400024F351 /* Realm.framework */; };
+		33184CAE1F988A400024F351 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33184CAC1F988A400024F351 /* RealmSwift.framework */; };
+		33184CB01F988A4B0024F351 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33184CAF1F988A4B0024F351 /* SnapKit.framework */; };
+		33184CB21F9895FC0024F351 /* UICircularProgressRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33184CB11F9895FC0024F351 /* UICircularProgressRing.framework */; };
 		33E327D51F943A8F00BA9514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E327D41F943A8F00BA9514 /* AppDelegate.swift */; };
 		33E327D71F943A8F00BA9514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E327D61F943A8F00BA9514 /* ViewController.swift */; };
 		33E327DA1F943A8F00BA9514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E327D81F943A8F00BA9514 /* Main.storyboard */; };
@@ -18,9 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33184CA41F97317E0024F351 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
 		33184CA71F9737910024F351 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		33184CA91F984CE60024F351 /* PlankTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlankTimer.swift; sourceTree = "<group>"; };
+		33184CAB1F988A400024F351 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		33184CAC1F988A400024F351 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		33184CAF1F988A4B0024F351 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		33184CB11F9895FC0024F351 /* UICircularProgressRing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICircularProgressRing.framework; path = Carthage/Build/iOS/UICircularProgressRing.framework; sourceTree = "<group>"; };
 		33E327D11F943A8F00BA9514 /* Plank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E327D41F943A8F00BA9514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E327D61F943A8F00BA9514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33184CA61F9731DF0024F351 /* SnapKit.framework in Frameworks */,
+				33184CB01F988A4B0024F351 /* SnapKit.framework in Frameworks */,
+				33184CAD1F988A400024F351 /* Realm.framework in Frameworks */,
+				33184CB21F9895FC0024F351 /* UICircularProgressRing.framework in Frameworks */,
+				33184CAE1F988A400024F351 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +54,10 @@
 		33184CA51F9731DF0024F351 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33184CB11F9895FC0024F351 /* UICircularProgressRing.framework */,
+				33184CAF1F988A4B0024F351 /* SnapKit.framework */,
+				33184CAB1F988A400024F351 /* Realm.framework */,
+				33184CAC1F988A400024F351 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,7 +82,6 @@
 		33E327D31F943A8F00BA9514 /* Plank */ = {
 			isa = PBXGroup;
 			children = (
-				33184CA41F97317E0024F351 /* SnapKit.framework */,
 				33E327D41F943A8F00BA9514 /* AppDelegate.swift */,
 				33E327D61F943A8F00BA9514 /* ViewController.swift */,
 				33184CA91F984CE60024F351 /* PlankTimer.swift */,
@@ -158,6 +170,9 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/UICircularProgressRing.framework",
 			);
 			name = Carthage;
 			outputPaths = (
